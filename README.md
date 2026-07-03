@@ -1,11 +1,68 @@
 # Hospital-Command-Center-Analysis
 
+Raw CSV Files
+      │
+      ▼
+Data Cleaning
+      │
+      ▼
+Data Modeling
+      │
+      ▼
+Feature Engineering
+      │
+      ▼
+KPI Calculation
+      │
+      ▼
+Aggregate Dashboard Tables
+      │
+      ▼
+Power BI Dashboard
+      │
+      ▼
+Business Insights
+
+
 Project Description :
 The Hospital Command Center Analytics Dashboard is a comprehensive Business Intelligence (BI) solution developed to help hospital management monitor, analyze, and optimize operational, financial, and clinical performance. The project integrates multiple hospital datasets—including patient records, insurance claims, emergency room activities, operation theatre schedules, bed occupancy, and staff scheduling—into a centralized interactive dashboard using Python, SQL, and Power BI.
 The project begins with data cleaning and preprocessing in Python, where missing values, duplicates, inconsistent formats, and date conversions are handled to ensure high-quality data. Feature engineering techniques are then applied to derive important metrics such as Length of Stay, Bed Occupancy Rate, ICU Occupancy, Staff Utilization, and Surgery Delay.
 The cleaned data is stored and managed in a relational database using SQL, where optimized tables, views, and aggregation queries are created to support efficient reporting and analysis.
 Using Power BI, a star schema data model is designed to establish relationships between fact and dimension tables. More than 50 DAX measures are created to calculate key performance indicators (KPIs), enabling dynamic and interactive analysis. The final solution consists of eight dashboard pages featuring drill-through functionality, synchronized slicers, tooltips, bookmarks, navigation buttons, and conditional formatting to provide a user-friendly analytical experience.
 The dashboard helps hospital administrators monitor patient flow, departmental performance, revenue trends, insurance claim status, emergency room efficiency, operation theatre utilization, bed and ICU occupancy, and staff productivity. It supports data-driven decision-making by providing real-time insights into hospital operations and resource utilization.
+
+Hospital_Command_Center/
+│
+├── Dataset/
+│      patient_journey.csv
+│      insurance_claims.csv
+│      ER_data.csv
+│      operation_theatre.csv
+│      bed_occupancy.csv
+│      staff_schedule.csv
+│
+├── Python/
+│      01_data_cleaning.py
+│      02_feature_engineering.py
+│      03_kpi_generation.py
+│      04_dashboard_datasets.py
+│
+├── SQL/
+│      01_create_tables.sql
+│      02_import_data.sql
+│      03_views.sql
+│      04_kpi_queries.sql
+│      05_dashboard_queries.sql
+│
+├── PowerBI/
+│      DAX_Measures.txt
+│      Dashboard_Design.pdf
+│
+├── Outputs/
+│      cleaned_csvs/
+│      aggregated_tables/
+│
+└── README.md
 
 Technologies Used :
 •	Python (Pandas, NumPy) – Data cleaning, preprocessing, feature engineering, KPI dataset generation
